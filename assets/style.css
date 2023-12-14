@@ -13,6 +13,7 @@ body {
     --primarycolor: #0e010e;
     --primary-text: 'Handjet', sans-serif;
     --secoundary-text: 'Nova Square', sans-serif;
+    --transparent-bgcolor: #58085869;
 }
 
 #main-nav {
@@ -32,10 +33,11 @@ body {
 #main-nav-lists li {
     display: inline;
     padding: 0.5em;
+
 }
 
 #main-nav-lists li a {
-    text-decoration: none;
+    text-decoration:none;
     color: var(--text-color);
 }
 
@@ -47,20 +49,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #380a38;
-    margin: 0 4vw;
+    background-color: var(--transparent-bgcolor);
+    padding: 5vw 4vw;
 
 }
 
 .portrait-image img {
-    width: 40vw;
+    width: 30vw;
     border-radius: 100%;
     border: 2px solid black;
-    box-shadow: 5px 5px 10em;
-
-    display: inline-block;
-    margin: 0 0.5rem;
-    /* referring directly to the animation's @keyframe declaration */
+    box-shadow: 5px 5px 9em;
+    padding: 0 0.6rem;
     animation-duration: 2s;
 
 }
@@ -68,7 +67,6 @@ body {
 .about-details h1 {
     font-size: 2vw;
     color: #ffcfff;
-    box-shadow: #380a38 20px 1em;
     margin: 5px;
     font-family: var(--secoundary-text);
 }
@@ -78,18 +76,32 @@ body {
     color: white;
 }
 
+.social-icons {
+    margin: 5px 10px;
+
+}
+ul > li > a {
+    padding:0.2em;
+    /* list-style-type: none;? */
+}
+
+ul > li > a:hover {
+    list-style-type: none;
+}
+
 .about-details #cv {
     padding: 0.8em;
     border-radius: 0.5em;
     font-size: 1vw;
     font-weight: 700;
     margin: 5px 10px;
-    background-color: #07000734;
-    color: rgba(0, 0, 0, 0.774);
+    background-color: var(--text-color);
+    color: rgb(2, 2, 2);
 }
 
 .about-details #cv:hover {
-    background-color: var(--text-color);
-    color: rgb(2, 2, 2);
+    background-color: #0700070c;
+    color: var(--text-color);
     border-color: 1px var(--text-color);
 }
+
