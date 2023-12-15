@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #070107;
@@ -83,6 +86,10 @@ body {
     color: var(--text-color);
 }
 
+.role-title span{
+    color: var(--about-details-color);
+}
+
 .fa-brands {
     color: var(--text-color);
     padding: 0.1em;
@@ -111,12 +118,13 @@ body {
     background-color: #0700070c;
     color: var(--text-color);
     width: 10vw;
+    border: 2px solid var(--text-color);
 }
 
 .btn:hover {
     background-color: var(--text-color);
     color: rgb(2, 2, 2);
-    border-color: 1px var(--text-color);
+    border: 2px solid var(--primarycolor);
 }
 
 /* about-section */
