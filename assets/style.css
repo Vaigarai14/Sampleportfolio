@@ -79,7 +79,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(to right, var(--transparent-bgcolor), rgba(255, 122, 89, 0));
-    padding: 8em 5em;
+    padding: 7.5em 5em;
 
 }
 
@@ -155,9 +155,8 @@ body {
     }
 
     .portrait-image img {
-        width: 12em;
+        width: 14em;
         margin-top: 3em;
-        margin-left: 2em;
         background-color: #0e010ea2;
         box-shadow: white 0px 0px 0.8em;
     }
@@ -253,7 +252,7 @@ body {
 @media only screen and (max-width: 600px) {
     #about-section {
         display: inline-block;
-        margin: 8em 3.2em;
+        margin: 4em 3.2em;
     }
 
     #portfolio_photo2 {
@@ -312,6 +311,8 @@ body {
 #card span {
     color: var(--text-color)
 }
+
+
 
 #card h1 {
     text-align: center;
