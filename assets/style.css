@@ -4,16 +4,17 @@
 }
 
 body {
-    background-color: #380a38;
+    background-color: #070107;
     background-attachment: fixed;
 }
 
 :root {
     --text-color: #F8F2EF;
-    --primarycolor: #0e010e;
+    --primarycolor: #01020e;
     --primary-text: 'Handjet', sans-serif;
     --secoundary-text: 'Nova Square', sans-serif;
     --transparent-bgcolor: #58085869;
+    --about-details-color: rgb(194, 123, 161);
 }
 
 #main-nav {
@@ -37,7 +38,7 @@ body {
 }
 
 #main-nav-lists li a {
-    text-decoration:none;
+    text-decoration: none;
     color: var(--text-color);
 }
 
@@ -45,11 +46,13 @@ body {
     color: rgb(240, 171, 240)
 }
 
-#About-section {
+/* about section */
+
+#home-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--transparent-bgcolor);
+    background: linear-gradient(to right, var(--transparent-bgcolor), rgba(255, 122, 89, 0));
     padding: 5vw 4vw;
 
 }
@@ -57,51 +60,112 @@ body {
 .portrait-image img {
     width: 30vw;
     border-radius: 100%;
-    border: 2px solid black;
-    box-shadow: 5px 5px 9em;
-    padding: 0 0.6rem;
+    background-color: #0e010ea2;
+    box-shadow: white 0px 0px 2vw;
     animation-duration: 2s;
 
 }
 
-.about-details h1 {
+.home-details h1 {
     font-size: 2vw;
     color: #ffcfff;
-    margin: 5px;
     font-family: var(--secoundary-text);
 }
 
-.about-details .role-title {
+.home-details .role-title {
     font-size: 4.5vw;
     color: white;
 }
 
+.fa-brands {
+    color: var(--text-color);
+    padding: 0.1em;
+    margin-right: 0.5vw;
+    font-size: 1.5vw;
+}
+
+.fa-brands:hover {
+    color: #0e010e;
+}
+
+#social-icons-lists {
+    list-style: none;
+    display: flex;
+}
+
 .social-icons {
-    margin: 5px 10px;
-
-}
-ul > li > a {
-    padding:0.2em;
-    /* list-style-type: none;? */
+    margin: 1vw 0;
 }
 
-ul > li > a:hover {
-    list-style-type: none;
-}
-
-.about-details #cv {
+.home-details #cv {
     padding: 0.8em;
     border-radius: 0.5em;
     font-size: 1vw;
     font-weight: 700;
-    margin: 5px 10px;
     background-color: var(--text-color);
     color: rgb(2, 2, 2);
 }
 
-.about-details #cv:hover {
+.home-details #cv:hover {
     background-color: #0700070c;
     color: var(--text-color);
     border-color: 1px var(--text-color);
 }
 
+/* about-section */
+
+#about-section {
+    display: flex;
+    align-items: center;
+    margin: 5vw 5vw;
+    justify-content: right;
+}
+
+#portfolio_photo2 {
+    padding: 3em 0 0 3em;
+    border-top: 3px solid var(--text-color);
+    border-left: 3px solid var(--text-color);
+
+}
+
+#portfolio_photo2 img {
+    width: 30vw;
+    box-shadow: 1em 1em 0.9em;
+}
+
+#about-details {
+    color: var(--text-color);
+    font-size: 1.5vw;
+    padding: 5vw;
+    margin: 2vw;
+}
+
+#about-details * {
+    margin: 1vw 0;
+    font-family: var(--secoundary-text);
+}
+
+
+#summary h5 {
+    color: var(--about-details-color);
+    font-family: var(--secoundary-text);
+    letter-spacing: 0.2vw;
+}
+
+#personal-details ul {
+    margin: 2vw;
+    font-family: var(--secoundary-text);
+}
+
+#personal-details span{
+    color: var(--about-details-color);
+}
+
+#personal-details a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+#personal-details a:hover{
+    color: var(--about-details-color);
+}
