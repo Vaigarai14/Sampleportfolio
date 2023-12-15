@@ -156,7 +156,7 @@ body {
 
     .portrait-image img {
         width: 14em;
-        margin-top: 3em;
+        margin: 3.5em 0;
         background-color: #0e010ea2;
         box-shadow: white 0px 0px 0.8em;
     }
@@ -252,7 +252,7 @@ body {
 @media only screen and (max-width: 600px) {
     #about-section {
         display: inline-block;
-        margin: 4em 3.2em;
+        margin: 1.5em 3.2em;
     }
 
     #portfolio_photo2 {
@@ -286,8 +286,6 @@ body {
 
 }
 
-
-
 /* Skills section */
 
 #skills-section {
@@ -311,7 +309,6 @@ body {
 #card span {
     color: var(--text-color)
 }
-
 
 
 #card h1 {
@@ -351,6 +348,71 @@ body {
 
 .react {
     width: 60%;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    #skills-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:15em 1em;   
+    }
+    #card {
+        background: linear-gradient(to right, var(--transparent-bgcolor), rgba(255, 122, 89, 0.02));
+        width: 100em;
+        height: 15em;
+        color: var(--about-details-color);
+        font-family: var(--primary-text);
+        border-radius: 2vw;
+        padding: 1em;
+        font-size: 1em;
+        margin: 0 1em;
+    }
+    
+    #card span {
+        color: var(--text-color)
+    }
+    
+    
+    #card h1 {
+        text-align: center;
+        /* padding:3vw;  */
+    }
+    
+    #container {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        font-size: 3vw;
+        margin: 0.8em 0;
+    }
+    
+    .ratio {
+        width: 80%;
+        padding:0.05em;
+        background-color: var(--text-color);
+    }
+    
+    .html {
+        width: 80%;
+    }
+    
+    .css {
+        width: 70%;
+    }
+    
+    .js {
+        width: 70%;
+    }
+    
+    .Bootstrap {
+        width: 60%;
+    }
+    
+    .react {
+        width: 60%;
+    }
 }
 
 /* Contact-section */
@@ -403,13 +465,17 @@ body {
 @media only screen and (max-width: 600px) {
 
     #Contact-section {
-        height: 55vw;
-        padding: 5vw;
+        height:30em;
+        padding:1em;
         color: var(--text-color);
         font-family: var(--primary-text);
         text-align: left;
     }
 
+    .heading {
+        text-align: center;
+        font-size:1em;
+    }
 
     .Contact-details input {
         margin: 2vw 9vw;
@@ -431,6 +497,7 @@ body {
     .Message {
         display: flex;
         align-items: center;
+        padding: 0.5em 0;
     }
 
 }
