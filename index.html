@@ -22,14 +22,13 @@
     <nav id="main-nav">
         <div id="title">
             <!-- icon can added -->
-            <h1>Vaikarai</h1>
+            <h1><a href="./index.html">Vaikarai</a></h1>
         </div>
         <div id="main-nav-lists">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact Me</a></li>
             </ul>
         </div>
@@ -48,7 +47,7 @@
                     <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <button id="cv">Download CV</button>
+            <button class="btn">Download CV</button>
         </div>
         <div class="portrait-image animate__animated animate__backInDown">
             <img src="./assets/image/portrait-image.png" alt="portfolio_photo" width="500px">
@@ -80,27 +79,31 @@
     <!-- Skills section -->
     <section id="skills-section">
         <div id=card>
-            <h1>My Skills</h1>
+            <h1>My <span>Skills</span></h1>
             <div id="container">
                 <h5>Html</h5>
                 <h5>90%</h5>
             </div>
             <div class="ratio html"></div>
+            <!-- css -->
             <div id="container">
                 <h5>Css</h5>
                 <h5>70%</h5>
             </div>
             <div class="ratio css"></div>
+            <!-- js -->
             <div id="container">
                 <h5>Javascript</h5>
                 <h5>70%</h5>
             </div>
             <div class="ratio js"></div>
+            <!-- bootstrap -->
             <div id="container">
                 <h5>Bootstrap(Framework)</h5>
                 <h5>60%</h5>
             </div>
             <div class="ratio Bootstrap"></div>
+            <!-- react -->
             <div id="container">
                 <h5>React(Framework)</h5>
                 <h5>50%</h5>
@@ -108,6 +111,29 @@
             <div class="ratio react"></div>
     </section>
 
+    <!-- Contact section -->
+    <section id="Contact-section">
+        <form>
+            <div class="Contact-details heading">
+                <h1>Contact<span>Me</span></h1>
+            </div>
+            <div class="Contact-details">
+                <label for="Name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="Contact-details">
+                <label for="Email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="Contact-details Message">
+                <label for="Message" id="box">Message:</label>
+                <textarea name="Message" cols="40" rows="5" placeholder=" Message..."></textarea>
+            </div>
+            <div id="primary-btn">
+                <button class="btn Submit">Submit</button>
+            </div>
+        </form>
+    </section>
 </body>
 
 </html>

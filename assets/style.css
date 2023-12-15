@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 body {
     background-color: #070107;
     background-attachment: fixed;
@@ -26,9 +27,14 @@ body {
     font-family: var(--primary-text)
 }
 
-#title h1 {
+#title h1 a{
     color: var(--text-color);
     letter-spacing: 3px;
+    text-decoration: none;
+}
+
+#title h1:hover {
+    color:var(--about-details-color);
 }
 
 #main-nav-lists li {
@@ -46,7 +52,7 @@ body {
     color: var(--about-details-color);
 }
 
-/* about section */
+/* Home section */
 
 #home-section {
     display: flex;
@@ -97,16 +103,17 @@ body {
     margin: 1vw 0;
 }
 
-.home-details #cv {
+.btn {
     padding: 0.8em;
     border-radius: 0.5em;
     font-size: 1vw;
     font-weight: 700;
     background-color: #0700070c;
     color: var(--text-color);
+    width: 10vw;
 }
 
-.home-details #cv:hover {
+.btn:hover {
     background-color: var(--text-color);
     color: rgb(2, 2, 2);
     border-color: 1px var(--text-color);
@@ -117,12 +124,13 @@ body {
 #about-section {
     display: flex;
     align-items: center;
-    margin: 5vw 5vw;
+    margin: 10vw 5vw;
     justify-content: right;
 }
 
 #portfolio_photo2 {
     padding: 3vw 0 0 3vw;
+    border-radius: 1em;
     border-top: 0.5vw solid var(--text-color);
     border-left: 0.5vw solid var(--text-color);
 
@@ -130,6 +138,7 @@ body {
 
 #portfolio_photo2 img {
     width: 30vw;
+    border-radius: 1em;
     box-shadow: 1em 1em 0.9em;
 }
 
@@ -175,7 +184,7 @@ body {
 #skills-section {
     display: flex;
     justify-content: center;
-    margin: 4vw;
+    margin: 10vw 5vw;
 }
 
 #card {
@@ -188,6 +197,10 @@ body {
     padding: 5vw;
     font-size: 2vw;
     margin: 0 10vw;
+}
+
+#card span {
+    color: var(--text-color)
 }
 
 #card h1 {
@@ -227,4 +240,78 @@ body {
 
 .react {
     width: 60%;
+}
+
+/* Contact-section */
+
+#Contact-section span {
+    color: var(--about-details-color);
+}
+
+#Contact-section {
+    background: linear-gradient(to left, var(--transparent-bgcolor), rgba(25, 22, 29, 0));
+    height: 35vw;
+    padding: 5vw;
+    color: var(--text-color);
+    font-family: var(--primary-text);
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact-details label {
+    font-size:2vw;
+}
+
+.Contact-details input {
+    margin: 2vw 6vw;
+    padding: 0.5vw;
+    width: 20vw;
+}
+
+.heading {
+    text-align: center;
+    font-size:3vw;
+}
+
+.Message {
+    align-items: center;
+}
+
+.Message label {
+    margin: 0 2em 0 0;
+}
+
+#primary-btn {
+    display: flex;
+    justify-content: center;
+    margin: 2vw 0;
+}
+
+@media only screen and (max-width: 600px){
+
+    #Contact-section {
+        height:55vw;
+        padding: 5vw;
+        color: var(--text-color);
+        font-family: var(--primary-text);
+        text-align: left;
+    }
+
+
+    .Contact-details input {
+        margin: 2vw 9vw;
+        min-width: 150px;
+    }
+
+    .Contact-details label {
+        font-size:3vw;
+    }
+
+    .Message {
+        display: flex;
+        align-items: center;
+    }
+
 }
