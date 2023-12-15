@@ -122,7 +122,7 @@ body {
 }
 
 #portfolio_photo2 {
-    padding: 3em 0 0 3em;
+    padding: 3vw 0 0 3vw;
     border-top: 3px solid var(--text-color);
     border-left: 3px solid var(--text-color);
 
