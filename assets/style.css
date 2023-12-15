@@ -30,14 +30,14 @@ body {
     font-family: var(--primary-text)
 }
 
-#title h1 a{
+#title h1 a {
     color: var(--text-color);
     letter-spacing: 3px;
     text-decoration: none;
 }
 
 #title h1:hover {
-    color:var(--about-details-color);
+    color: var(--about-details-color);
 }
 
 #main-nav-lists li {
@@ -86,7 +86,7 @@ body {
     color: var(--text-color);
 }
 
-.role-title span{
+.role-title span {
     color: var(--about-details-color);
 }
 
@@ -269,7 +269,7 @@ body {
 }
 
 .Contact-details label {
-    font-size:2vw;
+    font-size: 2vw;
 }
 
 .Contact-details input {
@@ -280,7 +280,7 @@ body {
 
 .heading {
     text-align: center;
-    font-size:3vw;
+    font-size: 3vw;
 }
 
 .Message {
@@ -297,10 +297,10 @@ body {
     margin: 2vw 0;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
 
     #Contact-section {
-        height:55vw;
+        height: 55vw;
         padding: 5vw;
         color: var(--text-color);
         font-family: var(--primary-text);
@@ -310,11 +310,19 @@ body {
 
     .Contact-details input {
         margin: 2vw 9vw;
-        min-width: 150px;
+        width: 120px;
+        height: 10px;
+        font-size: 0.5em;
     }
 
     .Contact-details label {
-        font-size:3vw;
+        font-size: 3vw;
+    }
+
+    .Message textarea {
+        width: 120px;
+        height: 60px;
+        font-size: 0.5em;
     }
 
     .Message {
