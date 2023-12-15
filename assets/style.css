@@ -252,8 +252,7 @@ body {
 @media only screen and (max-width: 600px) {
     #about-section {
         display: inline-block;
-        margin: 0.5em 3.2em;
-        border: 2px solid white;
+        margin: 2.5em 3.2em;
     }
 
     #portfolio_photo2 {
@@ -357,7 +356,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin:1.5em 2em;   
+        margin:2.5em 2em;   
     }
     #card {
         background: linear-gradient(to right, var(--transparent-bgcolor), rgba(255, 122, 89, 0.02));
@@ -466,7 +465,7 @@ body {
 @media only screen and (max-width: 600px) {
 
     #Contact-section {
-        height:20em;
+        height:15em;
         padding:2em;
         color: var(--text-color);
         font-family: var(--primary-text);
