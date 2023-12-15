@@ -1,6 +1,6 @@
-# Vaikarai Resume
+# Vaikarai Sample Portfolio
 
-### Here, you can find the sample personal portfolio.
+### Here, you can find the sample personal portfolio with cartoon image.
 
 
 
