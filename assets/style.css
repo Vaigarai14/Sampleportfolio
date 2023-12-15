@@ -14,7 +14,7 @@ body {
     --primary-text: 'Handjet', sans-serif;
     --secoundary-text: 'Nova Square', sans-serif;
     --transparent-bgcolor: #58085869;
-    --about-details-color: rgb(194, 123, 161);
+    --about-details-color: rgb(217, 96, 159);
 }
 
 #main-nav {
@@ -43,9 +43,8 @@ body {
 }
 
 #main-nav-lists li a:hover {
-    color: rgb(240, 171, 240)
+    color: var(--about-details-color);
 }
-
 /* about section */
 
 #home-section {
@@ -68,13 +67,13 @@ body {
 
 .home-details h1 {
     font-size: 2vw;
-    color: #ffcfff;
+    color: var(--about-details-color);
     font-family: var(--secoundary-text);
 }
 
 .home-details .role-title {
     font-size: 4.5vw;
-    color: white;
+    color: var(--text-color);
 }
 
 .fa-brands {
@@ -85,7 +84,7 @@ body {
 }
 
 .fa-brands:hover {
-    color: #0e010e;
+    color:var(--primarycolor);
 }
 
 #social-icons-lists {
@@ -102,13 +101,13 @@ body {
     border-radius: 0.5em;
     font-size: 1vw;
     font-weight: 700;
-    background-color: var(--text-color);
-    color: rgb(2, 2, 2);
+    background-color: #0700070c;
+    color: var(--text-color);
 }
 
 .home-details #cv:hover {
-    background-color: #0700070c;
-    color: var(--text-color);
+    background-color: var(--text-color);
+    color: rgb(2, 2, 2);
     border-color: 1px var(--text-color);
 }
 
@@ -123,8 +122,8 @@ body {
 
 #portfolio_photo2 {
     padding: 3vw 0 0 3vw;
-    border-top: 3px solid var(--text-color);
-    border-left: 3px solid var(--text-color);
+    border-top: 0.5vw solid var(--text-color);
+    border-left: 0.5vw solid var(--text-color);
 
 }
 
