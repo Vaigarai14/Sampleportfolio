@@ -26,7 +26,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: var(--primary-text)
 }
 
@@ -79,7 +79,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(to right, var(--transparent-bgcolor), rgba(255, 122, 89, 0));
-    padding: 7.5em 5em;
+    padding:7.5em 5em;
 
 }
 
@@ -156,7 +156,7 @@ body {
 
     .portrait-image img {
         width: 14em;
-        margin: 4em 0;
+        margin:5em 0;
         background-color: #0e010ea2;
         box-shadow: white 0px 0px 0.8em;
     }
@@ -228,6 +228,10 @@ body {
     letter-spacing: 0.2vw;
 }
 
+#summary hr {
+    box-shadow: #8c158c 0.5em 0.5em 0.9em;
+}
+
 #personal-details ul {
     margin: 2vw;
     font-family: var(--secoundary-text);
@@ -252,7 +256,7 @@ body {
 @media only screen and (max-width: 600px) {
     #about-section {
         display: inline-block;
-        margin: 2.5em 3.2em;
+        margin: 3.5em 3em;
     }
 
     #portfolio_photo2 {
@@ -264,19 +268,22 @@ body {
     }
     
     #portfolio_photo2 img {
-        width: 16em;
+        width: 15em;
         border-radius: 1em;
         box-shadow: 1em 1em 0.9em;
     }
 
     #summary {
-        margin: 2em 0;
+        margin: 3.5em 0;
         font-size: 2em;
         text-align: center;
     }
 
-    hr {
-        visibility: hidden;;
+    #summary hr {
+        /* visibility: hidden;; */
+        margin-top: 2em;
+        box-shadow: #8c158c 0.5em 0.5em 0.9em;
+
     }
 
     #personal-details {
