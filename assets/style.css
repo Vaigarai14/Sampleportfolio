@@ -150,7 +150,7 @@ body {
 
     #home-section {
         display: block;
-        padding:9vw 20vw; 
+        padding:30vw 20vw; 
     }
 
     .portrait-image {
@@ -161,7 +161,7 @@ body {
     .portrait-image img {
         display: flex;
         justify-content: center;
-        width: 12em;
+        width: 14em;
         margin:5em 0;
         background-color: #0e010ea2;
         box-shadow: white 0px 0px 0.8em;
