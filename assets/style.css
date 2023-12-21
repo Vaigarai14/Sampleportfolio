@@ -22,11 +22,11 @@ body {
 }
 
 #main-nav {
-    padding: 1.5em;
+    padding: 1.6em;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-family: var(--primary-text)
 }
 
@@ -79,7 +79,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(to right, var(--transparent-bgcolor), rgba(255, 122, 89, 0));
-    padding:7.5em 5em;
+    padding:9em 5em;
 
 }
 
