@@ -26,7 +26,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size: 1.5em;
+    font-size: 1.5em;                          
     font-family: var(--primary-text)
 }
 
@@ -79,12 +79,12 @@ body {
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(to right, var(--transparent-bgcolor), rgba(255, 122, 89, 0));
-    padding:9em 5em;
+    padding:9vw 8vw;
 
 }
 
 .portrait-image img {
-    width: 25em;
+    width: 25vw;
     border-radius: 100%;
     background-color: #0e010ea2;
     box-shadow: white 0px 0px 2vw;
@@ -93,16 +93,15 @@ body {
 }
 
 .home-details h1 {
-    font-size: 2vw;
+    font-size:2.5vw;
     color: var(--about-details-color);
     font-family: var(--secoundary-text);
 }
 
 .home-details .role-title {
-    font-size: 4.5vw;
+    font-size: 3vw;
     color: var(--text-color);
 }
-
 
 .role-title span {
     color: var(--about-details-color);
@@ -112,11 +111,12 @@ body {
     color: var(--text-color);
     padding: 0.1em;
     margin-right: 0.5vw;
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
 
 .fa-brands:hover {
-    color: var(--primarycolor);
+    color: var(--about-details-color);
+
 }
 
 #social-icons-lists {
@@ -149,13 +149,19 @@ body {
 @media only screen and (max-width: 600px) {
 
     #home-section {
-        display: inline-block;
-        align-items: center;
-        background: linear-gradient(to right, var(--transparent-bgcolor), rgba(255, 122, 89, 0));
+        display: block;
+        padding:9vw 20vw; 
+    }
+
+    .portrait-image {
+        display: flex;
+        justify-content: center;
     }
 
     .portrait-image img {
-        width: 14em;
+        display: flex;
+        justify-content: center;
+        width: 12em;
         margin:5em 0;
         background-color: #0e010ea2;
         box-shadow: white 0px 0px 0.8em;
@@ -163,15 +169,17 @@ body {
 
     .home-details {
         text-align: center;
+        margin-top: 2em;
     }
 
     .social-icons {
         display: flex;
         justify-content: center;
+        font-size:3.5vw;
     }
 
     .home-details h1 {
-        font-size: 1em;
+        font-size:1em;
     }
 
     .fa-brands {
@@ -180,7 +188,7 @@ body {
     }
 
     .btn {
-        width: 15em;
+        width:15em;
     }
 
 }
